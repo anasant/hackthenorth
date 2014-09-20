@@ -21,3 +21,38 @@
 #search-area { 
   background-color: orange;
 }
+
+.contact-bar {
+  height: 50px;
+}
+
+.title {
+  font-family: Verdana;
+}
+
+#contact{ 
+
+}
+
+.contact-list {
+  overflow: auto;
+  max-height: 450px;
+}
+
+.contact-header {
+
+}
+
+.start-call {
+  background-color: green;
+  border-color: green;
+}
+
+.end-call {
+  background-color: red;
+  border-color: red;
+}
+.key-pad {
+  float: right;
+
+}
