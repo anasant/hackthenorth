@@ -1,0 +1,23 @@
+#header-bar {
+  width: 100%;
+  display: block;
+  background-color: red;
+  padding: 0px 100px 0px 100px;
+  height: 50px;
+}
+
+#side-bar {
+  background-color: blue;
+  height: 100%;
+  width: 200px;
+}
+
+#contact-panel {
+  background-color: green;
+  height: 100%;
+  width: 800px;
+}
+
+#search-area { 
+  background-color: orange;
+}
