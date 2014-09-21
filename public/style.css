@@ -46,13 +46,19 @@
 .start-call {
   background-color: green;
   border-color: green;
+  color: #fff;
 }
 
 .end-call {
   background-color: red;
   border-color: red;
+  color: #fff;
 }
 .key-pad {
   float: right;
+  color: #fff;
+}
 
+.recent {
+  padding-top: 10px;
 }
