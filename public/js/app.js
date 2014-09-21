@@ -1,4 +1,4 @@
-(function() {
+jQuery(function($) {
   'use strict';
 
   function setup() {
@@ -12,12 +12,29 @@
 
   function twilioSetup(token) {
     Twilio.Device.setup(token);
-    Twilio.Device.incoming(function(connection) {
-      connection.accept();
-      console.log('connected');
-    });
   }
+
+  Twilio.Device.ready(function(device){
+      var $outNumber = $('#outbound-call');
+
+      function outCall(number){
+        $outNumber.val('');
+      }
+
+      device.incoming(function(connection) {
+        if (window.confirm("Incoming Call")) {
+            connection.accept();
+            console.log('connected');
+        }
+        connection.reject();
+      });
+
+      $outNumber.submit(function(oEvent){
+          oEvent.preventDefault();
+          outCall($outNumber.val());
+      })
+  })
 
   setup();
 
-})();
+});
