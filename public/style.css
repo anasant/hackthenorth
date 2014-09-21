@@ -62,3 +62,49 @@
 .recent {
   padding-top: 10px;
 }
+
+#send {
+  height: 100%;
+  padding: 9px 0px 9px 0px;
+  float: right;
+}
+
+.client-number {
+  text-align: center;
+  font-weight: bold;
+}
+
+#client-name {
+  display: block;
+  width: 70%;
+}
+
+#call-subject {
+  display: block;
+  width: 70%;
+}
+
+#call-notes {
+  display: block;
+}
+
+.control-label {
+  display: block;
+}
+
+#save {
+  float: right;
+}
+
+#discard {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 70px;
+}
+
+img {
+  height: 25px;
+}
+
+
+
